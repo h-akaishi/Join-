@@ -11,9 +11,3 @@
 /log/*
 !/log/.keep
 /tmp
-
-#データベース設定をIgnore
-/config/database.yml
-
-#secretsをIgnore
-/config/secrets.yml
