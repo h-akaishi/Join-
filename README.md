@@ -8,4 +8,4 @@ Join!は共同開発のマッチングサイトです。
 
 ## Remarks
 
-A Join for creating applications with [Ruby on Rails](http://rubyonrails.org/) 4.2.6
+A Join for creating applications with [Ruby on Rails](http://rubyonrails.org/) 4.x
