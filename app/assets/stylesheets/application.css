@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+/******     header     ******/
+.navbar .container .navbar-header .navbar-brand .obli{
+  font-style: oblique;
+}
+
+/******     end header     ******/
