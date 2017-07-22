@@ -51,4 +51,5 @@ gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-material-design', '0.1.4'
+gem 'parallax-rails'
 

@@ -1,0 +1,32 @@
+<script type="text/javascript">
+  $(window).load(function(){
+    var devishWidth = $(window).width();
+    var width = 1000;
+    if (devishWidth <= width) {
+      $('#parabox').removeClass('layer');
+    } else {
+      $('#parabox').addClass('layer');
+    }
+  });
+</script>
+
+<div class="jumbotron" id="parallax">
+  <div class="center-box">
+    <div id="parabox" class="layer" data-depth="0.5">
+      <h2 class="fadeInUp animated">Joint Development</h2>
+      <p class="sub-description fadeInUp animated">「<strong>Join!!</strong>」は、エンジニアのための共同開発マッチングサービスです。<!-- 作業方法に触発された開発プラットフォームです。ビジネスへのオープンソースからは、ホストし、コードを見直し、プロジェクトを管理し、他の開発者の何百万人と一緒にソフトウェアを構築することができます。 --></p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  var layer = document.getElementById('parallax');
+  var parallax = new Parallax(layer, {
+    scalarX: 5, //レイヤーの横移動
+    scalarY: 10, //レイヤーの縦移動
+    frictionX: 0.2, //移動速度
+    frictionY: 0.3, //移動速度
+    originX: 0.5, //マウス入力の横軸初期値
+    originY: 0.8 //マウス入力の縦軸初期値
+  });
+</script>

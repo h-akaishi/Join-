@@ -86,7 +86,7 @@ GEM
       less (~> 2.6.0)
       sprockets (> 2, < 4)
       tilt
-    libv8 (3.16.14.19-x86_64-darwin-16)
+    libv8 (3.16.14.19)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.6)
@@ -102,6 +102,7 @@ GEM
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     orm_adapter (0.5.0)
+    parallax-rails (1.0.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -199,6 +200,7 @@ DEPENDENCIES
   jquery-rails
   less-rails
   mysql2 (= 0.3.18)
+  parallax-rails
   pry-rails
   rails (= 4.2.6)
   sass-rails (~> 5.0)

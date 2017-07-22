@@ -15,9 +15,30 @@
  *= require bootstrap-material-design
  */
 
-/******     header     ******/
+ /******     header     ******/
+
+ #nav {
+  background-color: #656569;
+}
+
+.navbar .container .navbar-header .navbar-brand{
+  font-family: 'Righteous', cursive;
+  font-size: 55px;
+}
+
+
 .navbar .container .navbar-header .navbar-brand .obli{
   font-style: oblique;
 }
 
 /******     end header     ******/
+
+.responsive-body{
+  padding-top: 60px;
+}
+@media screen and (max-width: 1201px){
+  .responsive-body{
+    padding-top: 50px;
+  }
+
+}
