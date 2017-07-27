@@ -6,19 +6,17 @@
   height: 70vh;
   // background: linear-gradient(30deg, rgba(108,184,255,03), rgba(255,246,108,.3), rgba(255,163,108,.3));
   background: -moz-linear-gradient(30deg, rgba(43,123,124,1) 0%, rgba(39,209,149,0.94) 23%, rgba(53,109,183,0.88) 46%, rgba(127,196,49,0.81) 70%, rgba(242,46,91,0.76) 87%, rgba(255,102,109,0.73) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(30deg, rgba(43,123,124,1) 0%,rgba(39,209,149,0.94) 23%,rgba(53,109,183,0.88) 46%,rgba(127,196,49,0.81) 70%,rgba(242,46,91,0.76) 87%,rgba(255,102,109,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(30deg, rgba(43,123,124,1) 0%,rgba(39,209,149,0.94) 23%,rgba(53,109,183,0.88) 46%,rgba(127,196,49,0.81) 70%,rgba(242,46,91,0.76) 87%,rgba(255,102,109,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b7b7c', endColorstr='#baff666d',GradientType=0 ); /* IE6-9 */
-
-
+  background: -webkit-linear-gradient(30deg, rgba(43,123,124,1) 0%,rgba(39,209,149,0.94) 23%,rgba(53,109,183,0.88) 46%,rgba(127,196,49,0.81) 70%,rgba(242,46,91,0.76) 87%,rgba(255,102,109,0.73) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(30deg, rgba(43,123,124,1) 0%,rgba(39,209,149,0.94) 23%,rgba(53,109,183,0.88) 46%,rgba(127,196,49,0.81) 70%,rgba(242,46,91,0.76) 87%,rgba(255,102,109,0.73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b7b7c', endColorstr='#baff666d',GradientType=0 ); /* IE6-9 */
   background-size: 600% 600%;
   animation: AnimationName 8s ease infinite;
 }
 
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .jumbotron .center-box{
@@ -37,6 +35,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b7b7c', end
   }
 
 }
+.jumbotron .right-char{
+    // background: image-url("site_images/joy_mini.png") no-repeat 180px;
+    height: 70vh;
+    animation-delay:.9s;
+  }
 
 
 

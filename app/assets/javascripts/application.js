@@ -15,6 +15,4 @@
 //= require twitter/bootstrap
 //= require bootstrap-material-design
 //= require turbolinks
-//= require parallax
-//= require jquery.parallax
 //= require_tree .
