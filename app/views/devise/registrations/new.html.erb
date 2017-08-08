@@ -1,6 +1,18 @@
+<script type="text/javascript">
+  function agCheck(check){
+    var agBtn = document.getElementById('agree');
+
+    if (check.checked) {
+     agBtn.removeAttribute('disabled');
+   } else {
+     agBtn.setAttribute('disabled', 'disabled');
+   }
+ }
+</script>
+
 <h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
@@ -21,9 +33,65 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+  <div class="field">
+    <%= f.label :ユーザ名（半角英数字） %><br />
+    <%= f.text_field :user_name, autocomplete: "off" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+<div class="row">
+<div class="center-block" style="width: 50%">
+<div class="well">
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
+  <fieldset>
+    <legend><span style="font-family: 'Righteous', cursive">Join!!</span> 新規登録</legend>
+    <%= devise_error_messages! %>
+    <div class="form-group">
+      <%= f.label :email, class: 'col-md-2 control-label' %>
+      <div class="col-md-10">
+        <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'メールアドレスを入力してください' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :password, class: 'col-md-2 control-label' %>
+      <div class="col-md-10">
+        <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "パスワードを入力してください(#{ @minimum_password_length }文字以上)" %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :password_confirmation, class: 'col-md-2 control-label' %>
+      <div class="col-md-10">
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'パスワード再入力' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :ユーザ名（半角英数字）, class: 'col-md-2 control-label' %>
+      <div class="col-md-10">
+        <%= f.text_field :user_name, autocomplete: "off", class: 'form-control', placeholder: 'ユーザ名を入力してください。' %>
+      </div>
+    </div>
+    <div class="form-group" style="margin-top: 0;"> <!-- inline style is just to demo custom css to put checkbox below input above -->
+      <div class="col-md-offset-2 col-md-10">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" onclick="agCheck(this)">利用規約に同意する
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-10 col-md-offset-2">
+        <%= f.submit "登録する", id: 'agree', class: 'btn btn-primary', disabled: 'disabled' %>
+      </div>
+    </div>
+  </fieldset>
+<% end %>
+</div>
+</div>
+</div>

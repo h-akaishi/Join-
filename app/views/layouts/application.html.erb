@@ -10,12 +10,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-  <script type="text/javascript" charset="utf-8">
-    $(function(){
-      $.material.init();
-    });
 
-  </script>
 <body class="responsive-body">
 
   <%= render partial: 'common/header' %>
@@ -23,6 +18,26 @@
   <%= yield %>
   <footer>
   </footer>
+
+  <%= javascript_include_tag "parallax" %>
+  <%= javascript_include_tag "jquery.parallax" %>
+
+  <script type="text/javascript" charset="utf-8">
+    var layer = document.getElementById('parallax');
+    var parallax = new Parallax(layer, {
+    scalarX: -5, //レイヤーの横移動
+    scalarY: 10, //レイヤーの縦移動
+    frictionX: 0.2, //移動速度
+    frictionY: 0.3, //移動速度
+    originX: 0.5, //マウス入力の横軸初期値
+    originY: 0.8 //マウス入力の縦軸初期値
+  });
+</script>
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+    $.material.init();
+  });
+</script>
 
 </body>
 </html>
