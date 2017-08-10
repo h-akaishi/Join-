@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates :user_name, presence: true, length: { maximun: 16, minimum: 3}, format: { with: /\A[a-z0-9]+\z/i}
+  validates :user_name, presence: true, length: { maximun: 16, minimum: 3}, format: { with: /\A[a-z0-9]+\z/i}, uniqueness: true
 end

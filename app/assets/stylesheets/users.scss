@@ -1,3 +1,52 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+.contents{
+  .profile-header{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background-image: image-url("site_images/no_image_s");
+
+    .profile-center-box{
+      width: 40%;
+      padding: 10px 0 0 0;
+      .mypage-user-img{
+        border-radius: 50%;
+      }
+      .profile-info{
+        text-align: center;
+        font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+        .user-name{
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .profile-text{
+          color: #5a6061;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .profile-header:before{
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+  }
+}
