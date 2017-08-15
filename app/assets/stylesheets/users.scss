@@ -10,13 +10,16 @@
     position: relative;
     z-index: 0;
     overflow: hidden;
-    background-image: image-url("site_images/no_image_s");
+    background: currentColor;
+    // background-image: image-url("site_images/no_image_s");
 
     .profile-center-box{
       width: 40%;
       padding: 10px 0 0 0;
       .mypage-user-img{
         border-radius: 50%;
+        width: 128px;
+        height: 128px;
       }
       .profile-info{
         text-align: center;
@@ -27,7 +30,7 @@
           font-weight: bold;
         }
         .profile-text{
-          color: #5a6061;
+          color: #252727;
           font-weight: bold;
         }
       }
@@ -49,4 +52,9 @@
     bottom: -5px;
     z-index: -1;
   }
+}
+
+
+.intro-erea{
+  font-size: 24px;
 }

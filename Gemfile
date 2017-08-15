@@ -48,8 +48,9 @@ end
 gem 'pry-rails'
 gem 'devise'
 gem 'therubyracer'
-gem 'less-rails'
+gem 'less-rails', git: 'https://github.com/MustafaZain/less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-material-design', '0.1.4'
 gem 'parallax-rails'
+gem 'paperclip'
 

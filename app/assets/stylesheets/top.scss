@@ -42,10 +42,16 @@
 
 }
 .jumbotron .right-char{
-    // background: image-url("site_images/joy_mini.png") no-repeat 180px;
     height: 70vh;
     animation-delay:.9s;
   }
+
+@media screen and (max-width: 1000px){
+  .jumbotron .right-char{
+    display: none;
+  }
+
+}
 
 
 
