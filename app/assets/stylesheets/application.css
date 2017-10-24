@@ -21,13 +21,13 @@
   background-color: #656569;
 }
 
-.navbar .container .navbar-header .navbar-brand{
+.navbar .container .navbar-header .navbar-brand {
   font-family: 'Righteous', cursive;
   font-size: 55px;
 }
 
 
-.navbar .container .navbar-header .navbar-brand .obli{
+.navbar .container .navbar-header .navbar-brand .obli {
   font-style: oblique;
 }
 
@@ -39,12 +39,22 @@
   float: left;
 }
 
+.modal .modal-dialog .modal-content .modal-body .fb-box {
+  padding: 20px 0 10px 0;
+  border-top: 2px solid #898989;
+}
+
+.modal .modal-dialog .modal-content .modal-body .fb-box a {
+  text-decoration: none;
+}
+
 /******     end header     ******/
 
-.responsive-body{
+.responsive-body {
   padding-top: 60px;
 }
-@media screen and (max-width: 1201px){
+
+@media screen and (max-width: 1201px) {
   .responsive-body{
     padding-top: 50px;
   }
