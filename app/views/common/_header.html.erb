@@ -85,10 +85,10 @@
         </div>
         <% end %>
         <div class="fb-box">
-          <a class="btn-block btn-social btn-lg btn-facebook">
+          <%= link_to user_facebook_omniauth_authorize_path, class: 'btn-block btn-social btn-lg btn-facebook' do %>
             <i class="fa fa-facebook"></i>
             Facebookでログイン
-          </a>
+          <% end %>
         </div>
       </div>
     </div>
